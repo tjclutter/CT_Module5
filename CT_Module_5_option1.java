@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class CT_Module_5_option1 {
 	//header of recursive method MultiplyNum
-	public static int MultiplyNum(int numLeft, int sum) {
+	public static double MultiplyNum(int numLeft, double sum) {
 		//create scanner object named scnr
 		Scanner scnr = new Scanner(System.in);
 		//check if numLeft is equal to zero
@@ -14,7 +14,7 @@ public class CT_Module_5_option1 {
 			//prompt user to enter a number
 			//and store it in num
 			System.out.println("Enter number: ");
-			int num = scnr.nextInt();
+			double num = scnr.nextDouble();
 			//calculate new sum using new number num
 			//and the value of the old sum
 			sum = num * sum;
@@ -29,7 +29,7 @@ public class CT_Module_5_option1 {
 	public static void main(String[] args) {
 		//call recursive method with numLeft equaling five for five numbers
 		//and sum equaling one. store output in variable product 
-		int product = MultiplyNum(5, 1);
+		double product = MultiplyNum(5, 1);
 		//print product which stores product of the five numbers entered by user
 		System.out.println("The product of your five numbers is: " + product);
 	}
